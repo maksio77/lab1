@@ -19,7 +19,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        if [ -f package.json ]; then
+        if [ -f ./path/to/package.json ]; then
           npm install
         else
           echo "No package.json found!"
