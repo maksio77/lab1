@@ -1,75 +1,28 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LABS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header id="logo">
-        <h1>Мій Магазин</h1>
-    </header>
-
-    <nav id="nave">
-        <ul id="menu">
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-    </nav>
-
-    <section id="premier-bloc">
-        <h2>Ласкаво просимо!</h2>
-        <p>Знайдіть унікальні товари у нашому магазині.</p>
-        <div id="shopnow">
-            <a href="#">Купити зараз</a>
-        </div>
-    </section>
-
-    <section id="profil-image">
-        <img src="https://via.placeholder.com/300" alt="Профільний зображення">
-    </section>
-
-    <section id="presentation">
-        <h2>Про нас</h2>
-        <p>Ми пропонуємо високоякісні товари для вашого стилю та комфорту.</p>
-    </section>
-
-    <section id="imagevideo">
-        <h2>Галерея</h2>
-    </section>
-
-    <section id="produits">
-        <h2>Наші товари</h2>
-        <p>Вибирайте найкраще з нашої колекції.</p>
-    </section>
-
-    <section id="descriptifproduits">
-        <h2>Опис товарів</h2>
-        <p>Детальний опис кожного товару доступний у каталозі.</p>
-    </section>
-
-    <section id="map">
-        <h2>Наше розташування</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0768940472543!2d4.35247!3d50.8467335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3800ca6358f%3A0x27d2e5c8cfdf2a4a!2z0JvRjNCy0L7QtCDQktCw0LTQtdGA0LbQutCw!5e0!3m2!1suk!2sua!4v1632987647379!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <section id="contact">
-        <h2>Зв'яжіться з нами</h2>
-        <form>
-            <label for="name">Ім'я:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
-
-            <input type="submit" value="Відправити">
-        </form>
-    </section>
-
-</body>
-</html>
+<div class="wrapper">
+  <ui class="mainMenu">
+      <li class="item" id="account">
+          <a href="#account" class="btn"><i class="fas fa-user-circle"></i>My Account</a>
+          <div class="subMenu">
+              <a href="">item-1</a>
+              <a href="">item-2</a>
+              <a href="">item-3</a>
+          </div>
+      </li>
+      <li class="item" id="about">
+          <a href="#about" class="btn"><i class="fas fa-address-card"></i>About</a>
+          <div class="subMenu">
+              <a href="">item-1</a>
+              <a href="">item-2</a>
+          </div>
+      </li>
+      <li class="item" id="support">
+          <a href="#support" class="btn"><i class="fas fa-info"></i>Support</a>
+          <div class="subMenu">
+              <a href="">item-1</a>
+          </div>
+      </li>
+      <li class="item">
+          <a href="#" class="btn"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+      </li>
+  </ui>
+</div>
