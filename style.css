@@ -1,162 +1,156 @@
-#logo{
-  text-align:center;
-  margin: 50px auto 50px;
+#logo {
+  text-align: center;
+  margin: 50px auto;
 }
 
-#nave{
-  width:900px;
-  overflow:auto;
+#nave {
+  width: 900px;
+  overflow: auto;
   margin: 10px auto 2px;
   font-family: 'Source Code Pro', monospace; 
-  font-size:25px;
+  font-size: 25px;
 }
 
-ul{
-  list-style-type:none;
-  overflow:auto;
+ul {
+  list-style-type: none;
+  overflow: auto;
 }
 
-#menu{
-  margin:10;
+#menu {
+  margin: 10px;
 }
 
-#menu li{
-  float:left;
+#menu li {
+  float: left;
 }
 
-a{
-  text-decoration:none;
-  color:black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-
-#premierBloc{
-  background-image:url('https://static1.squarespace.com/static/5a526a6c1f318dd30f23c746/5a5277a3ec212d62e3fdc30d/5a52783c71c10b6703cd04f0/1515354188530/DSCF7039%282%29.jpg?format=1500w');
+#premier-bloc {
+  background-image: url('https://static1.squarespace.com/static/5a526a6c1f318dd30f23c746/5a5277a3ec212d62e3fdc30d/5a52783c71c10b6703cd04f0/1515354188530/DSCF7039%282%29.jpg?format=1500w');
   font-family: 'Source Code Pro', monospace;
-  color:white;
-  letter-spacing:2px;
-  font-size:50px;
-  background-size:cover;
-  background-repeat:no-repeat;
-  height:550px;
-  line-height:20px; 
-  text-align:right;
-  padding:150px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  line-height: 20px; 
+  text-align: right;
+  padding: 150px;
 }
 
-
-h1{
-  letter-spacing:5px;
+h1 {
+  letter-spacing: 5px;
   font-family: 'Source Code Pro', monospace;
-  color:white;
-  font-size:100px;
-  text-align:right;
+  color: white;
+  font-size: 100px;
+  text-align: right;
 }
 
-
-#Shopnow{
-  letter-spacing:5px;
+#shopnow {
+  letter-spacing: 5px;
   font-family: 'Source Code Pro', monospace;
-  color:black;
-  font-size:25px;
-  text-align:right;
-  margin-top:250px;
+  color: black;
+  font-size: 25px;
+  text-align: right;
+  margin-top: 250px;
 }
 
-#profilImage{
-  text-align:right;
-  float:right;
- }
+#profil-image {
+  text-align: right;
+  float: right;
+}
 
-#presentation{
-  text-align:center;
-  font-size:18px;
+#presentation {
+  text-align: center;
+  font-size: 18px;
   font-family: 'Cormorant Garamond', serif;
   margin: 15px;
-  padding : 15px;
+  padding: 15px;
 }
 
-p{
+p {
   margin-top: 30px;
-  margin-left:0px;
-   padding: 40px;
+  margin-left: 0;
+  padding: 40px;
 }
 
-
-#imagevideo{
-  background-image:url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
-  font-size:600px;
-  line-height:630px;
-  background-repeat:no-repeat;
-  background-size:cover;
-  text-align:center;
+#imagevideo {
+  background-image: url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
+  font-size: 600px;
+  line-height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-
-#produits{
-  text-align:left;
-  float:left;
-  margin:20px;
-  padding:20px;
+#produits {
+  text-align: left;
+  float: left;
+  margin: 20px;
+  padding: 20px;
 }
 
-#descriptifproduits{
-  text-align:center;
-  font-size:18px;
-  font-family:'Cormorant Garamond', serif;
-  float:auto;
-  margin:20px;
-  padding:20px;
+#descriptifproduits {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  float: none;
+  margin: 20px;
+  padding: 20px;
 }
 
-#map{
-  text-align:center;
+#map {
+  text-align: center;
 }
 
-form{
-  background-image:url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
-  font-size:16px;
-  line-height:20px;
-  text-align:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-size:cover;
+form {
+  background-image: url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Source Code Pro', monospace;
-  padding:15px;
+  padding: 15px;
 }
 
 input[type="submit"] {
   font-family: 'Source Code Pro', monospace;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  background:#ffffff;
-  font-weight:600;
-  display:block;
-  margin-top:12px;
-  padding:8px 22px 8px;
-  border:1px solid;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fff;
+  font-weight: 600;
+  display: block;
+  margin-top: 12px;
+  padding: 8px 22px;
+  border: 1px solid;
   margin: 15px auto;
 }
 
 input[type="password"] {
-  font: sans-serif;font-size:8px;
-  text-transform:uppercase;
-  font-weight:600;
-  padding:8px 22px 8px;
-  border:1px solid;
+  font-family: sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 22px;
+  border: 1px solid;
   margin: 8px;
-  border-radius:10px;
-}	
+  border-radius: 10px;
+}
 
 input[type="text"] {
-  font-size:8px;
-  text-transform:uppercase;
-  background:#ffffff;
-  font-weight:600;
-  padding:8px 22px 8px;
-  border:1px solid;
+  font-size: 8px;
+  text-transform: uppercase;
+  background: #fff;
+  font-weight: 600;
+  padding: 8px 22px;
+  border: 1px solid;
   margin: 8px;
-  border-radius:10px;
-}	
-  
+  border-radius: 10px;
+}
