@@ -127,7 +127,7 @@ input[type="submit"] {
   background: #fff;
   font-weight: 600;
   display: block;
-  margin: 12px auto 15px;
+  margin: 12px;
   padding: 8px 22px;
   border: 1px solid;
 }
