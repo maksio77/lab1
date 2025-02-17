@@ -9,35 +9,40 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
-      - name: Install dependencies
-        run: |
+    - name: Install dependencies
+      run: |
+        if [ -f package.json ]; then
           npm install
+        else
+          echo "No package.json found!"
+          exit 1
+        fi
 
-      - name: Install HTML linter
-        run: npm install -g htmlhint
+    - name: Install HTML linter
+      run: npm install -g htmlhint
 
-      - name: Run HTML linter
-        run: htmlhint "**/*.html"
+    - name: Run HTML linter
+      run: htmlhint "**/*.html"
 
-      - name: Run Stylelint
-        run: |
-          npx stylelint "**/*.css"
-          
-      - name: Install Dockerfile linter
-        run: |
-          wget -O /usr/local/bin/hadolint https://github.com/hadolint/hadolint/releases/latest/download/hadolint-Linux-x86_64
-          chmod +x /usr/local/bin/hadolint
+    - name: Run Stylelint
+      run: |
+        npx stylelint "**/*.css"
+        
+    - name: Install Dockerfile linter
+      run: |
+        wget -O /usr/local/bin/hadolint https://github.com/hadolint/hadolint/releases/latest/download/hadolint-Linux-x86_64
+        chmod +x /usr/local/bin/hadolint
 
-      - name: Run Dockerfile linter
-        run: hadolint Dockerfile
+    - name: Run Dockerfile linter
+      run: hadolint Dockerfile
   
   build-and-push:
     runs-on: ubuntu-latest
