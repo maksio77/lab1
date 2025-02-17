@@ -12,17 +12,22 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
     - name: Install HTML linter
       run: npm install -g htmlhint
 
     - name: Run HTML linter
       run: htmlhint "**/*.html"
 
-    - name: Install CSS linter
-      run: npm install -g stylelint
-
     - name: Run CSS linter
-      run: stylelint "**/*.css"
+      run: npx stylelint "**/*.css"
 
     - name: Install Dockerfile linter
       run: |

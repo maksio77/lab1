@@ -1,8 +1,0 @@
-{
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "block-no-empty": true,
-    "color-no-invalid-hex": true,
-    "unit-no-unknown": true
-  }
-}
