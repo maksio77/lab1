@@ -127,10 +127,9 @@ input[type="submit"] {
   background: #fff;
   font-weight: 600;
   display: block;
-  margin-top: 12px;
+  margin: 12px auto 15px;
   padding: 8px 22px;
   border: 1px solid;
-  margin: 15px auto;
 }
 
 input[type="password"] {
