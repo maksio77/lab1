@@ -1,6 +1,6 @@
 /* Основні стилі */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif; /* Видалив лапки навколо 'Inter' */
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
@@ -9,7 +9,7 @@ body {
 
 /* Шапка */
 header {
-  background-color: #007bff;
+  background-color: rgb(0 123 255); /* Використовую modern color-function notation */
   color: white;
   padding: 15px 0;
   text-align: center;
@@ -39,12 +39,12 @@ nav ul li a {
   background-color: white;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%); /* Виправлено alpha-value notation */
 }
 
 .hero h2 {
   font-size: 28px;
-  color: #007bff;
+  color: rgb(0 123 255);
 }
 
 .hero p {
@@ -55,7 +55,7 @@ nav ul li a {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #007bff;
+  background-color: rgb(0 123 255);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: rgb(0 86 179);
 }
 
 /* Блок "Про нас" */
@@ -76,7 +76,7 @@ nav ul li a {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #343a40;
+  background-color: rgb(52 58 64);
   color: white;
   margin-top: 20px;
 }
