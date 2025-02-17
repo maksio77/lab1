@@ -1,51 +1,155 @@
-body {
-  font-family: 'Source Code Pro', monospace;
-  margin: 0;
-  padding: 0;
-  background-color: hsl(from 0deg 0% 98%);
+#logo {
+  text-align: center;
+  margin: 50px auto;
 }
 
 #nave {
-  width: 80%;
-  max-width: 900px;
-  margin: 20px auto;
-  font-size: 20px;
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px hsl(from 0deg 0% 0% / 10%);
+  width: 900px;
+  overflow: auto;
+  margin: 10px auto 2px;
+  font-family: 'Source Code Pro', monospace; 
+  font-size: 25px;
 }
 
-a:hover {
-  color: hsl(from 340deg 100% 50%);
+ul {
+  list-style-type: none;
+  overflow: auto;
+}
+
+#menu {
+  margin: 10px;
+}
+
+#menu li {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#premier-bloc {
+  background-image: url('https://static1.squarespace.com/static/5a526a6c1f318dd30f23c746/5a5277a3ec212d62e3fdc30d/5a52783c71c10b6703cd04f0/1515354188530/DSCF7039%282%29.jpg?format=1500w');
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  line-height: 20px; 
+  text-align: right;
+  padding: 150px;
 }
 
 h1 {
-  font-size: 80px;
-  margin: 0;
-  text-shadow: 2px 2px 5px hsl(from 0deg 0% 0% / 30%);
+  letter-spacing: 5px;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 100px;
+  text-align: right;
 }
 
 #shopnow {
-  background: hsl(from 340deg 100% 50%);
+  letter-spacing: 5px;
+  font-family: 'Source Code Pro', monospace;
+  color: black;
+  font-size: 25px;
+  text-align: right;
+  margin-top: 250px;
 }
 
-#shopnow:hover {
-  background: hsl(from 340deg 80% 40%);
+#profil-image {
+  text-align: right;
+  float: right;
 }
 
 #presentation {
-  box-shadow: 0 4px 10px hsl(from 0deg 0% 0% / 10%);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 15px;
+  padding: 15px;
 }
 
-input[type="submit"] {
-  background: hsl(from 340deg 100% 50%);
-}
-
-input[type="submit"]:hover {
-  background: hsl(from 340deg 80% 40%);
+p {
+  margin-top: 30px;
+  margin-left: 0;
+  padding: 40px;
 }
 
 #imagevideo {
-  text-shadow: 2px 2px 10px hsl(from 0deg 0% 0% / 30%);
+  background-image: url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
+  font-size: 600px;
+  line-height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#produits {
+  text-align: left;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+}
+
+#descriptifproduits {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  float: none;
+  margin: 20px;
+  padding: 20px;
+}
+
+#map {
+  text-align: center;
+}
+
+form {
+  background-image: url('https://www.apyart.com/1342-thickbox_default/rose-pastel-clair-500ml.jpg');
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Source Code Pro', monospace;
+  padding: 15px;
+}
+
+input[type="submit"] {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fff;
+  font-weight: 600;
+  display: block;
+  margin: 12px auto 15px;
+  padding: 8px 22px;
+  border: 1px solid;
+}
+
+input[type="password"] {
+  font-family: sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 22px;
+  border: 1px solid;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  font-size: 8px;
+  text-transform: uppercase;
+  background: #fff;
+  font-weight: 600;
+  padding: 8px 22px;
+  border: 1px solid;
+  margin: 8px;
+  border-radius: 10px;
 }
