@@ -49,6 +49,7 @@ resource "aws_instance" "lab2" {
   ami                    = "ami-07a64b147d3500b6a"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.sg.id]
+  key_name               = "my-key"
 
   user_data = <<-EOF
                           #!/bin/bash
