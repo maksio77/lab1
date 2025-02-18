@@ -5,13 +5,8 @@ on:
     branches:
       - main
 
-permissions:
-  id-token: write
-  contents: read
-
 jobs:
   terraform:
-    name: Terraform Apply
     runs-on: ubuntu-latest
 
     steps:
@@ -29,9 +24,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-north-1
-
-      - name: Видалення інфраструктури (Terraform Destroy)
-        run: terraform destroy -auto-approve
 
       - name: Ініціалізація Terraform
         run: terraform init
