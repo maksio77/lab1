@@ -7,6 +7,13 @@ terraform {
   }
 
   required_version = ">= 1.2.0"
+
+  backend "s3" {
+    bucket = "lab2-terraform-state-bucket"
+    key    = "terraform.tfstate"
+    region = "eu-north-1"
+    encrypt = true
+  }
 }
 
 provider "aws" {
