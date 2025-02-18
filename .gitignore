@@ -1,5 +1,4 @@
 /node_modules
 .terraform/git filter-branch
 .terraform/*
-.terraform.lock.hcl
 terraform.tfstate.backup

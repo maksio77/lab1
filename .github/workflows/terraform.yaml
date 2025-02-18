@@ -29,7 +29,7 @@ jobs:
         run: terraform init
 
       - name: Перевірка змін в інфраструктурі (Terraform Plan)
-        run: terraform plan -out=tfplan
+        run: terraform plan
 
       - name: Застосування змін (Terraform Apply)
-        run: terraform apply -auto-approve tfplan
+        run: terraform apply -auto-approve
