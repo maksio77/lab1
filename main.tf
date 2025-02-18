@@ -13,6 +13,10 @@ provider "aws" {
   region = "eu-north-1"
 }
 
+resource "random_id" "unique_id" {
+  byte_length = 8
+}
+
 resource "aws_security_group" "sg" {
   name = "terraform-sg-${random_id.unique_id.hex}"
 
