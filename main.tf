@@ -17,12 +17,8 @@ resource "random_id" "unique_id" {
   byte_length = 8
 }
 
-data "aws_security_group" "existing_sg" {
-  name = "terraform-sg"
-}
-
 resource "aws_security_group" "sg" {
-  name = "terraform-sg"
+  name = "terraform-sg-${random_id.unique_id.hex}"
 
   ingress {
     from_port   = 22
