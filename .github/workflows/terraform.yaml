@@ -30,6 +30,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-north-1
 
+      - name: Видалення інфраструктури (Terraform Destroy)
+        run: terraform destroy -auto-approve
+
       - name: Ініціалізація Terraform
         run: terraform init
 
@@ -38,25 +41,3 @@ jobs:
 
       - name: Застосування змін (Terraform Apply)
         run: terraform apply -auto-approve tfplan
-
-  terraform-destroy:
-    name: Terraform Destroy
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch' # Запускати вручну
-
-    steps:
-      - name: Checkout репозиторій
-        uses: actions/checkout@v4
-
-      - name: Встановлення Terraform
-        uses: hashicorp/setup-terraform@v3
-
-      - name: Налаштування AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-north-1
-
-      - name: Видалення інфраструктури (Terraform Destroy)
-        run: terraform destroy -auto-approve
