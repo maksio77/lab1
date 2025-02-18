@@ -13,14 +13,6 @@ provider "aws" {
   region = "eu-north-1"
 }
 
-terraform {
-  backend "s3" {
-    bucket = "tfstate-lab2"
-    key    = "terraform.tfstate"
-    region = "eu-north-1"
-  }
-}
-
 resource "aws_security_group" "sg" {
   name = "terraform-sg"
 

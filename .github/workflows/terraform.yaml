@@ -26,7 +26,7 @@ jobs:
           aws-region: eu-north-1
 
       - name: Ініціалізація Terraform
-        run: terraform init -backend-config="bucket=tfstate-lab2" -backend-config="key=terraform.tfstate" -backend-config="region=eu-north-1"
+        run: terraform init
 
       - name: Перевірка змін в інфраструктурі (Terraform Plan)
         run: terraform plan -out=tfplan
