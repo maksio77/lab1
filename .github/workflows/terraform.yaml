@@ -28,8 +28,10 @@ jobs:
       - name: Ініціалізація Terraform
         run: terraform init
 
-      - name: Перевірка змін в інфраструктурі (Terraform Plan)
-        run: terraform plan
+      - name: Перевірка змін (terraform plan)
+        id: plan
+        run: terraform plan -out=tfplan
 
-      - name: Застосування змін (Terraform Apply)
-        run: terraform apply -auto-approve
+      - name: Застосування змін (terraform apply)
+        if: success() && steps.plan.outputs.exitcode == '0'
+        run: terraform apply -auto-approve tfplan
